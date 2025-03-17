@@ -1,0 +1,70 @@
+.event-filter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #2e2e2e; /* Primary background */
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    margin: 5px auto;
+}
+
+/* Styling for dropdowns */
+.event-filter select {
+    width: 220px; /* Increased width */
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 2px solid #ff5733; /* Secondary color for border */
+    border-radius: 8px;
+    background-color: white;
+    color: #2e2e2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event-filter select:focus {
+    border-color: #ff8c66;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.5);
+}
+
+/* Styling for DatePicker */
+.react-datepicker__input-container input {
+    width: 220px; /* Match dropdown width */
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 2px solid #ff5733;
+    border-radius: 8px;
+    background-color: white;
+    color: #2e2e2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.react-datepicker__input-container input:focus {
+    border-color: #ff8c66;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.5);
+}
+
+/* Styling for Search Button */
+.event-filter button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff5733; /* Secondary color */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event-filter button:hover {
+    background-color: #ff8c66;
+    transform: scale(1.05);
+}

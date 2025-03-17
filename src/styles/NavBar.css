@@ -1,0 +1,224 @@
+/* Main Navbar */
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2e2e2e;
+  padding: 0px 28px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 98%;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Left Section - Logo and Location */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo Styling */
+.logo-img {
+  width: 140px;
+  height: auto;
+}
+
+/* Location Selector */
+.location-selector {
+  display: flex;
+  align-items: center;
+  background-color: #404040;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+.location-selector:hover {
+  background-color: #505050;
+}
+
+.location-icon {
+  margin-right: 6px;
+  color: #ff5733;
+}
+
+/* Dropdown */
+.location-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background: #404040;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.location-selector:hover .location-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.location-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.location-item:hover {
+  background-color: #505050;
+}
+
+/* Center Section - Search Bar */
+.search-container {
+  display: flex;
+  /* align-items: center; */
+  position: relative;
+  width: 50%; /* Increased width */
+}
+
+.search-input {
+  width: 111%;
+  padding: 21px 25px;
+  border-radius: 15px;
+  border: 4px solid #ddd;
+  font-size: 20px;
+  outline: none;
+  transition: border 0.3sease-in-out;
+}
+
+.search-input:focus {
+  border: 3px solid #ff5733;
+}
+
+.search-icon {
+  position: absolute;
+  right: 25px;
+  color: gray;
+  cursor: pointer;
+}
+
+/* Right Section - Login/Signup Dropdown */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 0px; 
+}
+
+.auth-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.auth-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.auth-dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 160px;
+  background: #404040;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.auth-dropdown:hover .auth-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.auth-item {
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.auth-item:hover {
+  background-color: #505050;
+}
+
+/* Right Section - Buttons Styling */
+.right-section .auth-btn {
+  background-color: #ff5733;
+  color: white;
+  padding: 20px 20px; /* Increased padding */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.right-section .auth-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .search-container {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .right-section {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .main-navbar {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-container {
+    width: 90%;
+  }
+
+  .right-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-btn {
+    width: 100%;
+  }
+}
