@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/eventsphere/static/css/main.f2ecffe3.css",
+    "main.js": "/eventsphere/static/js/main.5687a179.js",
+    "static/js/453.3af0c808.chunk.js": "/eventsphere/static/js/453.3af0c808.chunk.js",
+    "static/media/confrences.jpeg": "/eventsphere/static/media/confrences.b672a6e6bf20eb642752.jpeg",
+    "static/media/movie.jpeg": "/eventsphere/static/media/movie.7b5dbafe1b167109a311.jpeg",
+    "static/media/theatre.jpeg": "/eventsphere/static/media/theatre.d5a872fdb3a251f75ecc.jpeg",
+    "static/media/sports.jpeg": "/eventsphere/static/media/sports.7fd7576a85449f9b5b2a.jpeg",
+    "static/media/weddings.jpeg": "/eventsphere/static/media/weddings.aee04f9738fa2f4cc95b.jpeg",
+    "static/media/parties.jpeg": "/eventsphere/static/media/parties.f30037e6e8861b4c4c8c.jpeg",
+    "static/media/shows.webp": "/eventsphere/static/media/shows.7bf10d3207185a4cd07d.webp",
+    "static/media/logo-transparent.png": "/eventsphere/static/media/logo-transparent.929a2fe9b916f8244ab6.png",
+    "static/media/concerts.jpeg": "/eventsphere/static/media/concerts.78f3cdcca4a3254d1b76.jpeg",
+    "index.html": "/eventsphere/index.html",
+    "main.f2ecffe3.css.map": "/eventsphere/static/css/main.f2ecffe3.css.map",
+    "main.5687a179.js.map": "/eventsphere/static/js/main.5687a179.js.map",
+    "453.3af0c808.chunk.js.map": "/eventsphere/static/js/453.3af0c808.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2ecffe3.css",
+    "static/js/main.5687a179.js"
+  ]
+}
