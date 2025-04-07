@@ -17,3 +17,10 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+  .loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

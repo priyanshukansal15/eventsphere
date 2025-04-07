@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+body {
+    background: #ffffff; /* White background */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Remove dark background pattern */
+.background-pattern {
+    display: none;
+}
+
+.container {
+    margin: 20px 0px 20px 700px;
+    width: 100%;
+    max-width: 750px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 4px solid #2e2e2e;
+}
+
+/* Remove border glow animation */
+.container::before {
+    display: none;
+}
+
+/* Title */
+h2 {
+    color: #333; /* Dark text */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form Input Fields */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid#2e2e2e;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #ffffff;
+    color: #333;
+    transition: 0.3s;
+    outline: none;
+}
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ff5733;
+    background: #f9f9f9;
+}
+/* Dropdown Styling */
+.input-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Date & Time Input Row */
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+/* File Upload Styling */
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #ff5733;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.file-upload:hover {
+    background: #fff3f0;
+}
+
+.file-upload input {
+    display: none;
+}
+
+.file-upload label {
+    color: #ff5733;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff5733, #d43d21);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(255, 87, 51, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #d43d21, #ff5733);
+    box-shadow: 0 6px 15px rgba(255, 87, 51, 0.5);
+    transform: scale(1.05);
+}
+
+/* Back to Home Link */
+.nav-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-link {
+    color: #ff5733;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #ff7755;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .input-row {
+        flex-direction: column;
+    }
+}
+
+
+
+/* .container {
+    margin: 0px 0px 0px 800px;
+    width: 70%;
+    max-width: 500px; */

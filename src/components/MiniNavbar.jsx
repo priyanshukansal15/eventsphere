@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./../styles/MiniNavbar.css";
 
 export default function MiniNavbar() {
@@ -5,15 +6,30 @@ export default function MiniNavbar() {
     <nav className="mini-navbar">
       {/* Left Side */}
       <div className="mini-nav-left">
-        {["Events", "Shows", "Plays", "Movies", "Parties", "Conferences"].map((item) => (
-          <button key={item} className="mini-nav-button">{item}</button>
+        {[
+          { name: "Events", path: "/events" },
+          { name: "Shows", path: "/shows" },
+          { name: "Plays", path: "/plays" },
+          { name: "Movies", path: "/movies" },
+          { name: "Parties", path: "/parties" },
+          { name: "Conferences", path: "/conferences" }
+        ].map((item) => (
+          <Link key={item.name} to={item.path} className="mini-nav-button">
+            {item.name}
+          </Link>
         ))}
       </div>
 
       {/* Right Side */}
       <div className="mini-nav-right">
-        {["Offers", "List Your Ticket", "List Your Shows"].map((item) => (
-          <button key={item} className="mini-nav-button">{item}</button>
+        {[
+          { name: "Offers", path: "/offers" },
+          { name: "List Your Ticket", path: "/list-ticket" },
+          { name: "List Your Shows", path: "/list-shows" }
+        ].map((item) => (
+          <Link key={item.name} to={item.path} className="mini-nav-button">
+            {item.name}
+          </Link>
         ))}
       </div>
     </nav>
