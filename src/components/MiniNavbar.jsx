@@ -23,7 +23,7 @@ export default function MiniNavbar() {
       {/* Right Side */}
       <div className="mini-nav-right">
         {[
-          { name: "Offers", path: "/offers" },
+          // { name: "Offers", path: "/offers" },
           { name: "List Your Ticket", path: "/list-ticket" },
           { name: "List Your Shows", path: "/list-shows" }
         ].map((item) => (

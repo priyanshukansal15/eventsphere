@@ -1,7 +1,7 @@
 .content {
     margin-top: 1px; /* Adjust to prevent content from hiding behind the fixed navbar */
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 body {

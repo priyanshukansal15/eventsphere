@@ -13,9 +13,11 @@ import PlaysPage from "./pages/PlaysPage";
 import ShowsPage from "./pages/ShowsPage";
 import ListYourShow from "./pages/ListYourShows";
 import ListYourTickets from "./pages/ListYourTickets";
-// import AboutUs from "./pages/AboutUs";
-// import ContactUs from "./pages/ContactUs";
-// import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Dashboard from './pages/Dashboard';
+import UserProfilePage from "./pages/userprofile";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import "./App.css";
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
       <div className="app-container">
         <Navbar />
         <Routes>
+          <Route index element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
@@ -35,9 +38,12 @@ function App() {
           <Route path="/shows" element={<ShowsPage />} />
           <Route path="/list-shows" element={<ListYourShow />} />
           <Route path="/list-ticket" element={<ListYourTickets />} />
-          {/* <Route path="/about-us" element={<AboutUs />} /> */}
-          {/* <Route path="/contact-us" element={<ContactUs />} /> */}
-          {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
+          <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/user-profile" element={<UserProfilePage />} />
+          {/* <Route path="/user-profile/:id" element={<UserProfilePage />} /> */}
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </div>
