@@ -53,7 +53,7 @@ export default function UserProfilePage() {
   const user = users[1]; // Using Priyanshu Kansal as the selected user
 
   return (
-    <div className="user-profile-container">
+    <div className="user-profile-page">
       {/* Sidebar */}
       <aside className="sidebar">
         <div>
@@ -163,5 +163,5 @@ export default function UserProfilePage() {
         </div>
       </main>
     </div>
-  );
+  )
 }

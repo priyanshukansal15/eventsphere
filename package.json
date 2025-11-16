@@ -2,7 +2,6 @@
   "name": "eventsphere",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://priyanshukansal15.github.io/eventsphere",
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
     "@testing-library/dom": "^10.4.0",
